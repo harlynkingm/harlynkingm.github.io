@@ -1,0 +1,287 @@
+.circle {
+	border-radius: 50%;
+    height:60px;
+    width: 40px;
+    padding-right: 20px;
+    float: left;
+    margin-right: 20px;
+}
+
+.facebookicon{
+    height:60%;
+    padding-top:13px;
+    padding-left:21px;
+}
+
+.youtubeicon{
+    width:85%;padding-top:18px;padding-left:13px;
+}
+
+.mixcloudicon{
+    width:110%;padding-top:18px;padding-left:8px;
+}
+
+.flickricon{
+    width:100%;padding-top:22px;padding-left:10px;
+}
+
+.githubicon{
+    width:100%;padding-top:13px;padding-left:9px;
+}
+
+.appicon{
+    width:95%;padding-top:12px;padding-left:10px;
+}
+
+@media (max-width: 600px){
+    .circle{
+        width: 20px;
+        height: 40px;
+        margin-right: 17px;
+    }
+    
+    .facebookicon{
+        padding-top:9px;
+        padding-left:15px;
+    }
+
+    .youtubeicon{
+        width: 110%;
+        padding-top:13px;
+        padding-left:9px;
+    }
+
+    .mixcloudicon{
+        width: 130%;
+        padding-top:13px;
+        padding-left:8px;
+    }
+
+    .flickricon{
+        width:110%;
+        padding-top:16px;
+        padding-left:9px;
+    }
+
+    .githubicon{
+        padding-top:11px;
+        padding-left:10px;
+    }
+
+    .appicon{
+        padding-top:11px;
+        padding-left:10px;
+    }
+}
+
+.center {
+    margin: auto;
+    padding: 10px;
+}
+
+.crop{
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: Baskerville;
+    src: url('font/Baskerville.ttf');
+    font-weight:400;
+}
+
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+#header {
+}
+#content {
+	padding-bottom:100px;   /* Height of the footer element */
+}
+#footer {
+	width:100%;
+	height:100px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+li{
+    display: inline;
+    padding-right: 20px;
+}
+
+.facebook{
+    background-color:#6b82cd;
+}
+
+.facebook:hover{
+    background-color:#3b579d;
+}
+
+.youtube{
+    background-color:#ffafa3;
+}
+
+.youtube:hover{
+    background-color:#e14e42;
+}
+
+.mixcloud{
+    background-color:#ffd065;
+}
+
+.mixcloud:hover{
+    background-color:#fcab41;
+}
+
+.flickr{
+    background-color:#ffa3e3;
+}
+
+.flickr:hover{
+    background-color:#ef74b4;
+}
+
+.github{
+    background-color:#a97fd4;
+}
+
+.github:hover{
+    background-color:#7c56a7;
+}
+
+.appstore{
+    background-color:#51b5bb;
+}
+
+.appstore:hover{
+    background-color:#009aa4;
+}
+
+.lighttext{
+    color: #777;
+}
+
+.right{
+    text-align: right;
+}
+
+.center{
+    text-align: center;
+}
+
+.apps{
+    border-radius: 1px;
+    border-color: #009aa4;
+    border-style: solid;
+    color: #009aa4;
+}
+
+.apps:hover, .appson{
+    background-color:#51b5bb;
+    color: #fff;
+}
+
+.games{
+    border-radius: 1px;
+    border-color: #7c56a7;
+    border-style: solid;
+    color: #7c56a7;
+}
+
+.games:hover, .gameson{
+    background-color:#a97fd4;
+    color: #fff;
+}
+
+.film{
+    border-radius: 1px;
+    border-color: #e14e42;
+    border-style: solid;
+    color: #e14e42;
+}
+
+.film:hover, .filmon{
+    background-color:#fd796e;
+    color: #fff;
+}
+
+.music{
+    border-radius: 1px;
+    border-color: #fcab41;
+    border-style: solid;
+    color: #fcab41;
+}
+
+.music:hover, .musicon{
+    background-color:#ffd065;
+    color: #fff;
+}
+
+.writing{
+    border-radius: 1px;
+    border-color: #4b68b0;
+    border-style: solid;
+    color: #4b68b0;
+}
+
+.writing:hover, .writingon{
+    background-color:#6b82cd;
+    color: #fff;
+}
+
+.flatbtn{
+    width: 100px;
+    height: 50px;
+/*    color: #fff;*/
+    margin-right: 20px;
+    cursor: pointer;
+    float: left;
+    line-height: 50px;
+    font-size: 23px;
+    transition: .2s;
+    -webkit transition: .2s;
+}
+
+@media(max-width: 900px){
+    .flatbtn{
+        width: 80px;
+        font-size: 19px;
+    }
+}
+
+@media(max-width: 800px){
+    .flatbtn{
+        width: 60px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 600px){
+    .flatbtn{
+        width: 35px;
+        font-size: 10px;
+    }
+}
+
+.storyblock{
+/*
+    border-style: solid;
+    border-color: #bbb;
+    border-radius: 1px;
+*/
+    margin-bottom: 30px;
+    color: #000;
+    cursor: pointer;
+}
+
+::selection{
+    color: #fff;
+    background: #333;
+}

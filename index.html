@@ -1,122 +1,548 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
   <title>Max Harlynking</title>
-  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="description" content="The official site of Max Harlynking">
+  <meta name="author" content="Max Harlynking">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $("#btn0").click(function(){
+            $("#me").delay(200).fadeIn(200);
+            $("#apps").fadeOut(200);
+            $("#games").fadeOut(200);
+            $("#film").fadeOut(200);
+            $("#music").fadeOut(200);
+            $("#writing").fadeOut(200);
+            $("#btn1").toggleClass("appson", false);
+            $("#btn2").toggleClass("gameson", false);
+            $("#btn3").toggleClass("filmon", false);
+            $("#btn4").toggleClass("musicon", false);
+            $("#btn5").toggleClass("writingon", false);
+        });
+        $("#btn1").click(function(){
+            $("#me").fadeOut(200);
+            $("#apps").delay(200).fadeIn(200);
+            $("#games").fadeOut(200);
+            $("#film").fadeOut(200);
+            $("#music").fadeOut(200);
+            $("#writing").fadeOut(200);
+            $("#btn1").toggleClass("appson", true);
+            $("#btn2").toggleClass("gameson", false);
+            $("#btn3").toggleClass("filmon", false);
+            $("#btn4").toggleClass("musicon", false);
+            $("#btn5").toggleClass("writingon", false);
+        });
+        $("#btn2").click(function(){
+            $("#me").fadeOut(200);
+            $("#apps").fadeOut(200);
+            $("#games").delay(200).fadeIn(200);
+            $("#film").fadeOut(200);
+            $("#music").fadeOut(200);
+            $("#writing").fadeOut(200);
+            $("#btn1").toggleClass("appson", false);
+            $("#btn2").toggleClass("gameson", true);
+            $("#btn3").toggleClass("filmon", false);
+            $("#btn4").toggleClass("musicon", false);
+            $("#btn5").toggleClass("writingon", false);
+        });
+        $("#btn3").click(function(){
+            $("#me").fadeOut(200);
+            $("#apps").fadeOut(200);
+            $("#games").fadeOut(200);
+            $("#film").delay(200).fadeIn(200);
+            $("#music").fadeOut(200);
+            $("#writing").fadeOut(200);
+            $("#btn1").toggleClass("appson", false);
+            $("#btn2").toggleClass("gameson", false);
+            $("#btn3").toggleClass("filmon", true);
+            $("#btn4").toggleClass("musicon", false);
+            $("#btn5").toggleClass("writingon", false);
+        });
+        $("#btn4").click(function(){
+            $("#me").fadeOut(200);
+            $("#apps").fadeOut(200);
+            $("#games").fadeOut(200);
+            $("#film").fadeOut(200);
+            $("#music").delay(200).fadeIn(200);
+            $("#writing").fadeOut(200);
+            $("#btn1").toggleClass("appson", false);
+            $("#btn2").toggleClass("gameson", false);
+            $("#btn3").toggleClass("filmon", false);
+            $("#btn4").toggleClass("musicon", true);
+            $("#btn5").toggleClass("writingon", false);
+        });        
+        $("#btn5").click(function(){
+            $("#me").fadeOut(200);
+            $("#apps").fadeOut(200);
+            $("#games").fadeOut(200);
+            $("#film").fadeOut(200);
+            $("#music").fadeOut(200);
+            $("#writing").delay(200).fadeIn(200);
+            $("#btn1").toggleClass("appson", false);
+            $("#btn2").toggleClass("gameson", false);
+            $("#btn3").toggleClass("filmon", false);
+            $("#btn4").toggleClass("musicon", false);
+            $("#btn5").toggleClass("writingon", true);
+        });
+        $("#block1").click(function(){
+            $("#desc1").slideToggle();
+            $("#story1").slideToggle();
+        });
+        $("#block2").click(function(){
+            $("#desc2").slideToggle();
+            $("#story2").slideToggle();
+        });
+        $("#block3").click(function(){
+            $("#desc3").slideToggle();
+            $("#story3").slideToggle();
+        });
+    });
+  </script>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/mystyles.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
 </head>
-
 <body>
-  <nav class="orange darken-1 z-depth-2" role="navigation" style="position:fixed;z-index:15;">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#top" class="brand-logo">Max Harlynking</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#films">film</a></li>
-        <li><a href="#music">music</a></li>
-        <li><a href="#coding">coding</a></li>
-      </ul>
 
-<!--       <ul id="nav-mobile" class="side-nav fixed" style="z-index:16;">
-        <li><a href="#films">film</a></li>
-        <li><a href="#music">music</a></li>
-        <li><a href="#coding">coding</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a> -->
-    </div>
-  </nav>
-<div id="top" class="section scrollspy">
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <div class="row center" style="padding-top:100px;">
-            <h1 class="header col s12 light"><span class="grey-text text-lighten-5" style="text-shadow: 2px 2px 10px #000;"><b>Imagination, implemented.</b></span></h1>
-        </div>
-        <br><br>
-      </div>
-    </div>
-    <div class="parallax"><img src="https://farm9.staticflickr.com/8504/8281488429_d6b92bb5c4_k_d.jpg" alt="Crystal"></div>
-  </div>
-    </div>
-    
-<div id="films" class="section scrollspy">
-    <div class="section">
-        <h3 style="padding-bottom:20px;padding-left:9%">film</h3>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div style="background-color: #ff6c6c; height:12px;"></div>
+  <header style="padding-bottom:20px" id="header">
+    <div class="container" style="border-bottom-style: solid; border-bottom-width:1px; border-color: #bbb">
       <div class="row">
-          <div class = "col offset-s1 s5">
-        <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/KWrRPohom3I" frameborder="0" allowfullscreen></iframe>
+        <div class="center" style="margin-top: 3%; text-align:center; ">
+          <h1 id="btn0" style="color:#e14e42; cursor: pointer">Max Harlynking</h1>
+<!--          <h4 style="color:#333333"><a id="btn1">Apps</a> • <a id="btn2">Games</a> • <a id="btn3">Film</a> • <a id="btn4">Music</a> • <a id="btn5">Writing</a></h4>-->
+            <div style="display: inline-block">
+                <div class="flatbtn apps" id="btn1">Apps</div>
+                <div class="flatbtn games" id="btn2">Games</div>
+                <div class="flatbtn film" id="btn3">Film</div>
+                <div class="flatbtn music" id="btn4">Music</div>
+                <div class="flatbtn writing" id="btn5">Writing</div>
+            </div>
+        </div>
       </div>
-        <h6 style="color:#757575">editing</h6>
+    </div>
+  </header>
+
+  <div id="content">
+      <div id="me">
+          <div class="container">
+              <h3 class="center" style="text-align:center">Imagination, implemented.</h3>
+              <h5 style="text-align:center; color: #777">At the intersection of creativity and techonology, bringing a unique vision to every project.</h5>
+              <div class="crop" style="height: 50vh; margin-bottom: 10px">
+                <img src="https://farm9.staticflickr.com/8504/8281488429_c061d9c99f_z_d.jpg" style="width:100%">
+              </div>
           </div>
-          <div class = "col s5">
-        <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/Dl-wyP5MjCU" frameborder="0" allowfullscreen></iframe>
       </div>
-        <h6 style="color:#757575">cinematography + music composition</h6>
+
+      <div id="apps" style="display:none">
+          <div class="container">
+              <div class="row">
+                  <div class="six columns">
+                      <h5 class="lighttext center" style="color:#e14e42">Winner Carnegie Mellon "Chili Pepper" Award <br> "Best Overall Project"</h5>
+                      <h4 class="center">Bread Express Web Application</h4>
+                      <iframe width=100% height="315" src="https://www.youtube.com/embed/28nvQOpTHu4" frameborder="0" allowfullscreen></iframe>
+                      <h5 style="padding-top:10px; font-size:20px; text-align:center;">Created using Ruby on Rails, HTML, CSS, and JavaScript</h5>
+                  </div>
+                  <div class="six columns">
+                      <h5 class="lighttext center" style="color:#e14e42">Audio/Video Synchronization Tool<br>Term Project</h5>
+                      <h4 class="center">Synchronus</h4>
+                      <iframe width=100% height="315" src="https://www.youtube.com/embed/2mbJwND5Dsc" frameborder="0" allowfullscreen></iframe>
+                      <h5 class="center"  style="padding-top:10px; font-size:20px">Created using Python and tkinter</h5>
+                  </div>
+              </div>
+              <div class="row">
+                  <h6 class="center" style="margin-top:20px;"><b>Programming Languages Known:</b> Python, Java, C#, JavaScript, HTML, CSS, SQL</h6>
+              </div>
           </div>
       </div>
-    </div>
-    </div>
-    
-<div class="parallax-container">
-      <div class="parallax"><img src="https://farm6.staticflickr.com/5616/15287273318_9dbe441619_k_d.jpg"></div>
-    </div>
-    
-<div id="music" class="section scrollspy">
-<div class="container">
-    <div class="section" style="padding-top:20px;">
-        <h3 align = right style="padding-bottom:20px;">music</h3>
-    <iframe width=100% scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/71367326&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-    <h6 style="color:#757575">performance</h6>
-    </div>
-    <div class="section" style="padding-bottom:20px">
-    <iframe width="100%" height="180" src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=14666b26-a07b-4f6d-9017-bc5ba42f216a&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2FdjMHK%2Fdisco-fever-mix-2015%2F&amp;hide_cover=1&amp;hide_tracklist=1&amp;light=1&amp;replace=0" frameborder="0"></iframe><div style="clear: both; height: 3px; width: auto;"></div><p style="display: block; font-size: 11px; font-family: 'Open Sans', Helvetica, Arial, sans-serif; margin: 0px; padding: 3px 4px; color: rgb(153, 153, 153); width: auto;"><a href="https://www.mixcloud.com/djMHK/disco-fever-mix-2015/?utm_source=widget&amp;utm_medium=web&amp;utm_campaign=base_links&amp;utm_term=resource_link" target="_blank" style="color:#808080; font-weight:bold;">Disco Fever Mix 2015</a><span> by </span><a href="https://www.mixcloud.com/djMHK/?utm_source=widget&amp;utm_medium=web&amp;utm_campaign=base_links&amp;utm_term=profile_link" target="_blank" style="color:#808080; font-weight:bold;">Djmhk</a><span> on </span><a href="https://www.mixcloud.com/?utm_source=widget&amp;utm_medium=web&amp;utm_campaign=base_links&amp;utm_term=homepage_link" target="_blank" style="color:#808080; font-weight:bold;"> Mixcloud</a></p><div style="clear: both; height: 3px; width: auto;"></div>
-    <h6 style="color:#757575">mix</h6>
-    </div>
-</div>
-</div>
-    
-   <div class="parallax-container">
-      <div class="parallax"><img src="https://farm9.staticflickr.com/8057/8282593590_98b7bee38f_k_d.jpg"></div>
-    </div>
-    
-<div id="coding" class="section scrollspy">
-    <div class="container">
-    <div class="section">
-        <h3>coding</h3>
-        <div class="video-container">
-            <video width=100% height=100% class="responsive-video" controls="controls" poster="https://www.dropbox.com/s/xx4waj1o86ftj43/title.png?dl=1">
-    <source src="https://www.dropbox.com/s/hflub14jg07tlhi/Tumble%20Trailer.mp4?dl=1" type="video/mp4">
-  </video>
+
+      <div id="games" style="display:none">
+          <div class="container">
+              <h3>Tumble
+                  <h5 class="lighttext">iOS and Android Game (Coming Soon)</h5>
+              </h3>
+              <iframe width=100% height="440" src="https://www.youtube.com/embed/FcaSRAnyn-U" frameborder="0" allowfullscreen></iframe>
+              <h6 class="lighttext right" style="padding-top:10px">Created using Unity3D</h6>
           </div>
-        <h6 style="color:#757575">coding, design, and music composition</h6>
-    </div>
+      </div>
+
+      <div id="film" style="display:none">
+          <div class="container">
+              <h3>Viral Videos</h3>
+              <div class="row" style="border-bottom-style: solid; border-bottom-width:1px; border-color: #bbb; padding-bottom: 20px">
+                  <div class="six columns">
+                      <h5 class="lighttext">Breaking Bad as a Romantic Comedy</h5>
+                      <iframe width=100% height="315" src="https://www.youtube.com/embed/KWrRPohom3I" frameborder="0" allowfullscreen></iframe>
+                      <h6 class="lighttext" style="padding-top:10px">Featured on Huffington Post, Yahoo, and reddit, among others</h6>
+                  </div>
+                  <div class="six columns">
+                      <h5 class="lighttext right">The Republican Debate as a Dog Show</h5>
+                      <iframe width=100% height="315" src="https://www.youtube.com/embed/S4JDcxLjrfE" frameborder="0" allowfullscreen></iframe>
+                      <h6 class="lighttext right" style="padding-top:10px">Featured on the AV Club and AddictingInfo</h6>
+                  </div>
+              </div>
+              <h3 style="margin-top: 10px">Promotional Videos</h3>
+              <div class="row">
+                  <div class="six columns">
+                      <h5 class="lighttext">"Faces of Work" Short Film Festival Intro</h5>
+                      <iframe width=100% height="315" src="https://www.youtube.com/embed/2tzlCJBURLg" frameborder="0" allowfullscreen></iframe>
+                      <h6 class="lighttext" style="padding-top:10px">Created using After Effects</h6>
+                  </div>
+                  <div class="six columns">
+                      <h5 class="lighttext right">"Shot for Shot" Short Film Festival Intro</h5>
+                      <iframe width=100% height="315" src="https://www.youtube.com/embed/7rrIT7p1mBE" frameborder="0" allowfullscreen></iframe>
+                      <h6 class="lighttext right" style="padding-top:10px">Created using After Effects</h6>
+                  </div>
+              </div>
+              <div class="row" style="border-bottom-style: solid; border-bottom-width:1px; border-color: #bbb; padding-bottom: 20px">
+                  <div class="six columns">
+                      <h5 class="lighttext">Slingtype Insurance Advertisement</h5>
+                      <iframe width=100% height="315" src="https://www.youtube.com/embed/E0JfqBijWVc" frameborder="0" allowfullscreen></iframe>
+                      <h6 class="lighttext" style="padding-top:10px">Created using After Effects</h6>
+                  </div>
+              </div>
+              <h3 style="margin-top: 10px">Short Films</h3>
+              <div class="row">
+                  <div class="six columns">
+                      <h5 class="lighttext">Metronome</h5>
+                      <iframe width=100% height="315" src="https://www.youtube.com/embed/Dl-wyP5MjCU" frameborder="0" allowfullscreen></iframe>
+                      <h6 class="lighttext" style="padding-top:10px">Filmed, edited, and composed music for</h6>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="music" style="display:none">
+          <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <h3>Mashups</h3>
+                    <h5 class="lighttext">Daft Punk + Earth, Wind &amp; Fire<br>"September (Daft Punk Mix)"</h5>
+                    <iframe width=100% height="315" src="https://www.youtube.com/embed/sxuwXCn5GMo" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="six columns right">
+                    <h3>Mixes</h3>
+                    <h5 class="lighttext">Disco Fever Mix 2015<br>Hits from the '70's through Today</h5>
+                    <iframe width="100%" height="315" src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=0d4db59a-8be4-4163-9c15-1d8a823ebc8b&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2FdjMHK%2Fdisco-fever-mix-2015%2F&amp;replace=0" frameborder="0"></iframe>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div id="writing" style="display:none">
+          <div class="container">
+              <div class="row">
+                  <h3 style="margin-bottom:0px;">Short Stories</h3>
+                  <h5 class="lighttext" style="margin-bottom:30px;">Click on any of the stories to expand.</h5>
+                  <div class="writing storyblock container" id="block1">
+                      <h4 style="margin-bottom:0px;margin-left:20px;margin-top:5px;">I Wrote, No, I Scribbled</h4>
+                      <h6 style="margin-bottom:5px;margin-left:20px;" id="desc1">A murder mystery about a tall man in a grey hat having a marvelous Sunday afternoon.</h6>
+                      <p style="margin-top:10px;margin-bottom:5px;margin-left:20px;margin-right:20px;display:none" id="story1">The grey man with the tall hat was having a marvelous Sunday afternoon.
+                <br><br>
+Wait, hold on a second, I don’t think so. That’s a horrible way to begin a murder mystery. It leaves out all sense of mystery, particularly the part about the murder. After all, the grey man was the victim of the murder about to take place, the murderess being Alice, age 49. I messed up again. A proper writer would never give away the answer to his puzzle within the first few sentences of his writing. That is the wrong thing to do. Might as well begin with that classic ending line:
+                <br><br>
+So, does anybody know whats for dinner? The grey man gasped for air, nothing came. He began to shake, his stomach sinking into oblivion. That really is the climax of this story. After all, why would one write a murder mystery if there had not been a murder?
+            <br><br>
+It came to an end on a strangely chilly August evening, the kind of night in which dogs kill their owners and the such. That appears to be a common thing too. At least, in my neighborhood. The ink then bled onto this paper, as did the grey-man’s wrecked heart. Too bad Alice wasn’t there to see the case through- looks like this was going to be a one woman job. It did turn out, however, that he was a poisoned man of great stature. Tall men always are.
+            <br><br>
+Jupiter is one of the several planets visible from the big red planet right next to that inhabited blue and green one, according to most normal people anyway. Also the dog, who licked that man’s cold, dead, face was there too. Insanity is more of a work of art then a menace, as tends to be the case with confused men with grey faces and tall hats, which is how Alice thought her marriage with the tall grey man would turn out. The subject of this paragraph is the growth of insanity.
+            <br><br>
+His books lie in a pile of flames. Don’t read them, or else I’m afraid you’ll end up retarded, or something along those lines. The house was being cleaned out by empty people like a dishwasher would clean a polished set of poisoned dishes. Sometimes Alice wondered what on that green and blue planet she was doing with the poison, and other times, she wondered why we can’t eat at our own will, rather then having to wait for someone to supply the food for us. 
+            <br><br>
+She had the eyes of a tiger, the mouth of a lion, the hands of a leopard, the legs of a hyena. Yet, she was none of those things for which she had so dearly hoped. Why? Why did she do it? It’s been awhile since we visited the pool with the grey man, so it’s time to get back to that. He’s the protagonist, anyway. He walked home the way a tall man with a nice hat would. Very quietly. That's the denouement of my story, I’m afraid. I often worry about these things.
+            <br><br>
+Alice had a short father. Then again, most were short compared to the tall man. She was a rough creature only concerned with the material nature of things, like food. She also had a nonexistent mother of ten. According to Merriam-Webster, the definition of nonexistent is to be absent of existence, which also happened to define Alice’s newly dead father and husband. Alice didn’t know where her other siblings got themselves off to, neither did she much care.
+            <br><br>
+The cookies were always well baked, laced with a healthy dose of potent sugary cyanide. The grey man stuttered, nearly collapsing on the nearby bearskin rug. Wouldn't want to do that, would he? That was a real bear once. He laughed for the last time, as that bear had its brains removed upon its death. If only we could all have that bliss upon our existence. Can you imagine what it must be like to be a brainless freak like us?
+            <br><br>
+It was a tiring job for Alice, who was used to nocturnal restlessness, to get him out of that room. Drag, pull, drag, pull. Relax. Often she took the quantum leap to unconsciousness. By the bearskin rug, the grey man's organs put up their for-sale signs. Bye-bye liver, who just so happened to be on strike for internal abuse. He was sick already, the grey man shivered. Getting up out of his chair by the pool, he had just wanted some cookies.
+            <br><br>
+Spoiler alert: the tall man with the grey hat was Alice’s father through adoption, but she preferred to believe they were married. Alice did not decide to marry within the family; not even within the species. At least, as is the opinion of 94% of today’s qualified scientists. What is it like, spoiled and brain-dead, like a sack of 152 lb. human-jerky. He was not eaten like most, we imagine.
+            <br><br>
+In conclusion, there was a man, his dog Alice, and a mixed up tall hat which the grey man forgot by the pool he so willingfully left to go get poisoned. The general consensus seems to be he should not have done that. The grey man was hungry, so he got up from his poolside deck, looking forward to an afternoon swim. But he ate well. Too well. Alice killed her owner by accidentally spilling the cyanide on the counter top into his cookie batter.
+            <br><br>
+Don’t swim until an hour after you eat, please.
+            <br><br>
+Thank you.</p>
+                  </div>
+                  <div class="writing storyblock container" id="block2">
+                      <h4 style="margin-bottom:0px;margin-left:20px;margin-top:5px;">Are You Having Fun Yet?</h4>
+                      <h6 style="margin-bottom:5px;margin-left:20px;" id="desc2">A tragic accident on a family road trip to Disney World resonates throughout the life of a young man.</h6>
+                      <p style="margin-top:10px;margin-bottom:5px;margin-left:20px;margin-right:20px;display:none" id="story2">
+                          It was always on some road trip. A family vacation. Just sitting in the car for hours, driving on an empty road. Sometimes we would drive beside pastures, where sheared sheep and cows would wait in line to enter large barns that they would never leave. Other times the ground got so foggy it felt almost as if we were inside a dream.
+                <br><br>
+Usually near the beginning of a trip, my dad would turn around and ask us the same question. It wasn't how he asked it- but there was always something wrong with the way the words came out. Almost like he was speaking words fed to him through a script.
+ <br><br>
+"Are you having fun yet?" He would ask. 
+ <br><br>
+My sister and I never knew what else to say except for a half-spirited "yeah," and he would turn around and keep driving. Like he was satisfied.
+ <br><br>
+My sister and I used to fight almost the entire trip. My mom would tell us to stop, and we would, but we'd be back at it again in no time. 
+ <br><br>
+"Mom, it's not fair, how come Danny always gets to sit on the right side?"
+ <br><br>
+"I do not!"
+ <br><br>
+"Do too!"
+ <br><br>
+"Kids, put the pencils away. You're just going to hurt each other."
+ <br><br>
+"Will not!"
+ <br><br>
+And then my sister would poke me with her pencil and I would cry. But it wasn't a real cry, just a fake one. And my mom would know and she would turn around and I would just get louder.
+ <br><br>
+A few hours would pass and my sister would start talking about one of her friends' moms who was a supermodel, and I would tell her how it wasn't true because supermodels never have kids, and she would look at me like I was five. But I wasn't five.
+ <br><br>
+My dad never got involved in the family discussions. He rarely turned around, never scolded us, and never told us what was wrong with what we were doing. My mom would yell at him sometimes for "enabling the kids," but I don't think he cared much. There was always a kind of sad look on his face. I would have said he was tired from work, but he hadn't worked in three years. Maybe that's what was getting him down. My mom would look at him with raised eyebrows and he wouldn't look back.
+ <br><br>
+My sister had folded her arms and was pressing her nose against the glass, fogging up the clearness with her breath. After a little she would go back to her coloring book, pushing her straight hair back behind her small ears as it fell down across her face. Looking down always made me carsick, so I was stuck staring straight ahead at the back of my mother's neck. I would think about poking her in between the top of the seat and the head rest, and sometimes I would, but not this time. I was half asleep when my mother turned.
+ <br><br>
+"Are you kids excited to go to Disney World?"
+ <br><br>
+My sister always wanted to be the first to answer.
+ <br><br>
+"Yeah!" I would say before she had the chance. My sister had her nose up against the window again. I thought about pushing her head into it further. Maybe, if I pressed hard enough, I would feel it squish.
+ <br><br>
+"If you kids keep up this behavior, we might need to cut the vacation short," Mom would say, knowing the hotel had been booked for months. My dad's eyes would remain on the road. "Isn't that right, David?" Mom would ask him.
+ <br><br>
+"Yes. Right, kids. You better behave yourselves," my dad would say, looking at my mom. 
+ <br><br>
+I thought about what it would be like if I opened my car door, jumping out. It didn't seem like we were moving that fast on the highway anyway. I could press the lock and just lean on the door and then-
+ <br><br>
+"What did I do? I haven't done anything! It was all Danny," my sister would say.
+ <br><br>
+"That's not true! Mom! She started it!"
+ <br><br>
+"Nuh-uh!"
+ <br><br>
+"Yeah-huh!"
+ <br><br>
+"Stop it! Both of you!" My mom would yell as I pushed my sister lightly on the shoulder.
+ <br><br>
+"Mom! Danny hit me!"
+ <br><br>
+"Danny!"
+ <br><br>
+"I did not!"
+ <br><br>
+"Don't hit your sister!"
+ <br><br>
+"I didn't! Why do you always take her side?"
+ <br><br>
+My mom turned back around to face the road. A moment passed.
+ <br><br>
+"Mom! He did it again!"
+ <br><br>
+"Danny, we will stop the car if we have to."
+ <br><br>
+"I didn't do anything!"
+ <br><br>
+"Yes he did! He hit me twice!"
+ <br><br>
+And then I would push her again. And she wouldn't say anything because she would hit me next. Except her hit would be harder than mine.
+ <br><br>
+"Kids!"
+ <br><br>
+I would push her again. Harder than she had done to me. And it would be justified. And she would be forced back against the window. And it would feel good. And she would accidently hit the handle. And I would have won. Then the door would open. And my dad would turn. And he would hit the brake. And my mom would scream. And my sister would be pushed out. 
+ <br><br>
+Like a newborn.
+ <br><br>
+Into the traffic.
+ <br><br>
+----
+ <br><br>
+I would spend late nights in my college girlfriend's apartment because I could. We would sit on the sheep's fur rug and talk. About books. About band names. About strange mixtures of food that would somehow taste better than they sounded.
+ <br><br>
+We used to hide the fact that we were happy by refusing to smile. It was rare for us to break out into fits of giggles and laughter, because the jokes we told were ones that only we understood, and the crack of a smile would only ruin the moment. Our lives reminded me of something out of a '90s sitcom. Friends passing in and out of her room and making a comment or two before moving on to do whatever our friends did.
+ <br><br>
+It was about the look on her face when she would try to figure out what I was thinking. And I would stare back at her, trying to memorize that look. Her eyebrows pushed together in an effort to prevent me from memorizing the look completely. The eyebrows were always the hardest part to remember.
+ <br><br>
+I used to want to put my arm around her shoulders and stop her from going anywhere. And she wouldn't acknowledge my presence- an acknowledgement that only fed my desire to stay there with her and do nothing. We both knew exactly where we were and it was okay because she was completely mine.
+ <br><br>
+"You think there's a star for everyone who's ever lived?" she would ask, not meaning anything but just wanting to hear her voice echo across the room into my thoughts.
+ <br><br>
+"Probably more," I would say, letting her know she was right in thinking so.
+ <br><br>
+We drank when we wanted to because no one was going to stop us. We kissed when we had to because no one could have stopped us.
+ <br><br>
+"Danny, we should go on a trip," she would say.
+ <br><br>
+"Planes are expensive," I would say.
+ <br><br>
+"We could drive."
+ <br><br>
+"Where?"
+ <br><br>
+"Disney World," she would say, cracking a smile. I wouldn't smile back.
+ <br><br>
+Around 3AM one of us would become tired and move. Sometimes one of us fell asleep. Most of the time we both went to the bed, often without saying a word, and simply went to sleep. 
+ <br><br>
+There was no need for words. It was a state of being. A simple presence was enough. In sleep we were alone.
+ <br><br>
+I used to dream about different shades of cows. Sometimes they were purple, mooing towards me as I drove by. Other times they were the color of the road. The door handle and the road. These cows were silent.
+ <br><br>
+I sometimes awoke with a memory. She was used to this and didn't need to wake up with me. I would remove my shirt, wet from perspiration, and count sheep. The same sheep that had been sheared to make the rug at the foot of the bed. My personal flock.
+ <br><br>
+I would think about starting a family. Four kids. A quiet home. Radio would play in the morning as they got ready for school. Each of them with unique names and personalities that I had created. And I would never raise my voice against them because they would take care of themselves.
+ <br><br>
+I would drive them to school and go off to work knowing they were excited for summer vacation. Only then, we would go on family outings. We would visit modern art museums. We would go swimming in the local pond used for ice skating in the winter. We would visit my parents house and they would give my kids presents. We would go on road trips.
+ <br><br>
+No.
+ <br><br>
+Not road trips.
+ <br><br>
+----
+ <br><br>
+"Next in line, please," I would say as the next family approached  the car-shaped vehicle. "Make sure you guys keep your eyes on the road, okay?" The kids would look at me as their parents put the bars across their laps, the excitement of a new experience in their eyes.
+ <br><br>
+I lived the same day for three years. The skies were usually blue, and if they weren't it was only raining. A passing, hard rain that would shut down the Motor Speedway for an hour and let up almost immediately.
+ <br><br>
+"Keep your hands on the steering wheel. Remember- you're driving the car!" I would tell them. The kids would always get excited at this. Even teenagers became mildly satisfied from being able to control the movement of a car two feet in either direction of a predefined track. 
+ <br><br>
+"You guys ready?" The kids would nod, their parents smiling. "3... 2... 1... Go!" The cars would burst forward with the power of a lawnmower engine. Over the years I had repaired hundreds, learning each individual piece and function of the ride like it was my own. The fact was the ride had been there far before me and would continue to be long after I leave.
+ <br><br>
+The track became dull after the first thirty second rush of speed, so I quickly rose to the position of Ride Operator after a few weeks of having to face the crowds of disappointed kids leaving the ride as the Exit Assistant. It was almost my lunch break.
+ <br><br>
+I ate my turkey sandwich smeared with mayonnaise like it was the first thing I had eaten in weeks. One of my closest friends approached me from across the room as I ate.
+ <br><br>
+"Another day in the Happiest Place on Earth," he would say. I would nod. "A kid threw up earlier in Tomorrowland. Got that cleaned up in under a minute," he added.
+ <br><br>
+"Wouldn't want to ruin anyone's day," I said, swallowing. We sat in silence for a moment.
+ <br><br>
+"Danny, you're still a kid. What are you still doing here, man?" He would ask. I had been asked this before and it wouldn't be the last time.
+ <br><br>
+"Can't get enough, I guess."
+ <br><br>
+"Cut the crap man, I'm not one of the guys up top. Honest, man. Why are you still here?"
+ <br><br>
+"Why are you still here?"
+ <br><br>
+"You know why I'm here, man, I don't have anywhere else to go, but look at you! You've got a degree in... what is it, Philosophy? Can't you use that for something?"
+ <br><br>
+"I kind of lost interest."
+ <br><br>
+"Lost interest... Man, if I was in your position. I mean, you've got all the chance in the world! You've got a family, don't you?"
+ <br><br>
+"My parents are a few hours away," I said, taking another bite.
+ <br><br>
+"No, no, man I mean a real family. Wife, kids-"
+ <br><br>
+"Didn't work out, I suppose," I said.
+ <br><br>
+"You're somethin' else, I'll tell you that..." He looked off into the distance. "Guess you can lead a horse to water."
+ <br><br>
+"What wrong with staying here? It's nice, quiet..."
+ <br><br>
+"And fake! Don't you get it? Everything here is completely artificial! Nonsense! This isn't the real world, man, this is-"
+ <br><br>
+"Disney World. I know."
+ <br><br>
+"It doesn't bother you that there's a whole other world out there that's... Real?"
+ <br><br>
+"I guess I don't really see the difference," I paused. He looked down at the table.
+ <br><br>
+"I don't know, man, I'm just saying... I took this job because I thought it would be cool to work here. I mean, it's Disney, we're working in a dream. And I just thought it would be more..."
+ <br><br>
+"Fun?" I asked.
+ <br><br>
+"Yeah," he said.
+ <br><br>
+"I used to think that's what it was all about too. The magic. Making people happy. The 'dream.' But that's not what it is. We're all just in our own little world and it doesn't even matter what's out here. You could be in the happiest place on earth and have a terrible time- because it's not about the real world. It's about you and what makes you happy in your own world. And if it's not about you having fun, then there's no dream left to have."
+ <br><br>
+"So tell me something man- Are you having fun yet?" he asked. 
+ <br><br>
+I sat still for a moment, thinking.
+ <br><br>
+"Almost."
+ <br><br>
+So I pulled the door shut and my sister never left the car.
+ <br><br>
+And my father looked back at me.
+ <br><br>
+And I looked up at him.
+ <br><br>
+And he smiled.
+ <br><br>
+                      </p>
+                  </div>
+<!--
+                  <div class="writing storyblock container" id="block3">
+                      <h4 style="margin-bottom:0px;margin-left:20px;margin-top:5px;">Number Line</h4>
+                      <h6 style="margin-bottom:5px;margin-left:20px;" id="desc3">7, accused of eating 9, is not actually a cannibal.</h6>
+                      <p style="margin-top:10px;margin-bottom:5px;margin-left:20px;margin-right:20px;display:none" id="story3">6 was afraid of 7 because 7 ate 9. The first thing one should understand about 7 is that 7 was not a cannibal, in the sense that he did not enjoy consuming those in his species. 9, although dead, was not eaten by 7, therefore 7 should not be convicted of eating his peer or any other such cannibalistic activity.
+<br><br>
+3 shot once. Twice. One shot hit air, and shot two entered 9, who was jogging at the right time in the wrong place, and was now dead. The shots rang in the empty corridor that suddenly became filled with 6, who appeared, having travelled through time just in time to see whether 7 really did eat 9. 3 squinted in the noon-day sun coming through the overhead window, checking whether or not he had shot 7. Seeing the outline of 6 and 9, 3 frowned, realizing this was not quite going according to plan. 7 approached with a horrified expression, and a blinded 3 did not see him. 7 ran over to 9 and leaned over his body, to which 6 disappeared, knowing that 7 really did eat 9 and closing the case. Still nearly blinded, and realizing 7 was right in front of him, 3 felt his hand tighten. 3's third shot entered 7, killing him as well.
+<br><br>
+9 jogged in the early morning. Living in a time of reason, 9 listened to orchestral sounds while doing this action, which involved the continuous motion of legs from the front to the back of 9's body. At the same time, 6 was delivering a gun to 3, 3 was yelling at 6, and 7 enjoyed a nice meal of the type of meat that is not of the same species as himself. So far, nothing has happened.
+<br><br>
+6 was shopping for a gun in the dead night. This was a common occurrence because of his lack of time during the day, and was not seen as unusual by any of 6’s peers, including 3 and 9. 6 was not the only one lacking time- 7 had even less, and he was not even a cannibal. 6 wanted to save 9. He knew he could, because he had seen 7 eat 9 before. He had to work faster.
+<br><br>
+7 was eating his second to last meal, and it happened to be a dinner. Unfortunately for him, 6 was planning his death. 7 was not ready to die, but neither was 9. 7 enjoyed his dinner, which, once again, did not involve the consummation of one of his own kind, and 3 approached him. 7 knew he was coming and was ready for one of their intense discussions about the nature of time and cannibalism in accusatory tones.
+<br><br>
+6 saw it all. 7 ate 9, he was sure about this. It was mid-day, and 6 was back from the future, which he sometimes visited due to curiosity. Before his visit, 6 was almost sure he knew about 7’s horrible secret. Now 6 knew why all of the numbers were vanishing. He had to stop 7 from eating them.
+<br><br>
+3 sniffed the early morning air. Today was going to be a good day. Not just another day at work. Something special was going to happen, he just felt it. 3 looked at 7. Smiling, 7 looked back at 3. He must have felt it too. 3 was ready for the future, whatever it had to offer, and whatever he had to do to keep it going the way it was supposed to, he would do it.
+<br><br>
+“Son, today’s going to be a good day,” 3 said, taking a bite of 2's deceased leg.
+                      </p>
+                  </div>
+-->
+              </div>
+          </div>
+      </div>
   </div>
-</div>
     
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <div id="footer" style="background-color:#eee; position:fixed">
+      <div class="container" style="text-align:center">
+          <div style="padding-top: 20px; display: inline-block">
+              <a href="http://facebook.com/harlynkingm">
+                  <div class="circle facebook"><img src="images/fbook.png" class="facebookicon"></div>
+              </a>
+              <a href="http://youtube.com/c/mhkproductions">
+                  <div class="circle youtube"><img src="images/youtube.png" class="youtubeicon"></div>
+              </a>
+              <a href="http://mixcloud.com/djmhk">
+                  <div class="circle mixcloud"><img src="images/mixcloud.png" class="mixcloudicon"></div>
+              </a>
+              <a href="http://flickr.com/photos/maxharlynking">
+                  <div class="circle flickr"><img src="images/flickr.png" class="flickricon"></div>
+              </a>
+              <a href="http://github.com/harlynkingm">
+                  <div class="circle github"><img src="images/github.png" class="githubicon"></div>
+              </a>
+              <a href="#">
+                  <div class="circle appstore" style="margin-right: 0px"><img src="images/appstore.png" class="appicon"></div>
+              </a>
+          </div>
+      </div>
+  </div>
+
 </body>
-    
-  <footer class="page-footer orange darken-3">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h4 class="white-text left">Contact + More Info</h4>
-            <br>
-          <p class="grey-text text-lighten-4 left"><b>Email:</b> harlynkingm@gmail.com<br>
-              <b>Phone:</b> 407-453-4371<br>
-              <b>Programming Languages Known:</b> Python, Java, C#, JavaScript, HTML, CSS, SQL<br>
-              <b>Applications Known:</b> Adobe Photoshop, After Effects, Encore, Premiere, InDesign, Illustrator, Autodesk Maya, Final Cut Pro, Logic Pro, Unity3D</p>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container"> Site and photos created by Max Harlynking
-      </div>
-    </div>
-  </footer>
+
 </html>
-      
