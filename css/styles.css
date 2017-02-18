@@ -1,0 +1,68 @@
+.header{
+}
+
+.name {
+  font-weight: bold;
+  position: absolute;
+  left: 25px;
+  top: 18px;
+}
+
+.social {
+  position: absolute;
+  right: 25px;
+  top: 28px;
+}
+
+.social-button {
+  height: 32px;
+  opacity: 0.3;
+  margin-left: 6px;
+  transition: opacity 0.1s;
+}
+
+.social-button:hover {
+  opacity: 0.6;
+}
+
+.content {
+  height: 300px;
+  width: 100%;
+  background-color: grey;
+  margin-bottom: 40px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.content:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.row:first-child {
+  margin-top: 150px;
+}
+
+@media(max-width: 800px){
+  .name {
+    font-size: 2.6em;
+    width: 100%;
+    text-align: center;
+    position: static;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .social {
+    width: 100%;
+    position: static;
+    text-align: center;
+  }
+  
+  .social-button {
+    margin: 5px;
+  }
+  
+  .row:first-child {
+    margin-top: 25px;
+  }
+}
