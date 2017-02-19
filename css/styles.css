@@ -28,6 +28,7 @@ html, body {
 }
 
 .social {
+  z-index: 100;
   position: absolute;
   right: 25px;
   top: 28px;
