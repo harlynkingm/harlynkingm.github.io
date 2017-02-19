@@ -31,7 +31,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1040px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -162,8 +162,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #6d6d6d;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 

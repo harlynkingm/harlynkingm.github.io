@@ -1,3 +1,17 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -30px;
+}
+
+.push, .footer {
+  height: 30px;
+}
+
 .header{
 }
 
@@ -6,6 +20,11 @@
   position: absolute;
   left: 25px;
   top: 18px;
+  transition: opacity 0.1s;
+}
+
+.name:hover {
+  opacity: 0.8;
 }
 
 .social {
@@ -16,30 +35,135 @@
 
 .social-button {
   height: 32px;
-  opacity: 0.3;
+  opacity: 0.2;
   margin-left: 6px;
   transition: opacity 0.1s;
 }
 
 .social-button:hover {
-  opacity: 0.6;
+  opacity: 0.4;
+}
+
+.footer {
+  margin-left: 25px;
+  font-size: 0.8em;
+}
+
+.footer p {
+  margin: 0;
 }
 
 .content {
   height: 300px;
+  max-height: 40vh;
+  min-height: 250px;
   width: 100%;
-  background-color: grey;
   margin-bottom: 40px;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.18);
+  text-align: center;
+  position: relative;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .content:hover {
   transform: scale(1.05);
-  cursor: pointer;
+  box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.18);
+}
+
+.content .content-cover, .content .content-items {
+  opacity: 0;
+}
+
+.content:hover .content-cover, .content:hover .content-items {
+  opacity: 1;
+}
+
+.content-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: opacity 0.4s;
+}
+
+.content-items {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  right: 15px;
+  transform: translateY(-50%);
+  transition: opacity 0.4s;
+}
+
+.content-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.content-subtitle {
+  font-size: 1.3em;
+}
+
+.content-description {
+  margin-top: 7px;
+}
+
+.content-links img {
+  margin-top: 18px;
+  height: 32px;
+  opacity: 0.6;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.content-links a:hover img {
+  opacity: 1;
 }
 
 .row:first-child {
-  margin-top: 150px;
+  padding-top: 17vh;
+}
+
+.nowon {
+  background-image: url("../images/nowon.png");
+}
+
+.snootube {
+  background-image: url("../images/snootube.png");
+}
+
+.droplet {
+  background-image: url("../images/droplet.png");
+}
+
+.bread-express {
+  background-image: url("../images/breadexpress.png");
+}
+
+.forkthis {
+  background-image: url("../images/forkthis.png");
+}
+
+.breakingbad {
+  background-image: url("../images/breakingbad.jpg");
+}
+
+
+.noselect {
+  cursor: default;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 @media(max-width: 800px){
@@ -63,6 +187,16 @@
   }
   
   .row:first-child {
-    margin-top: 25px;
+    padding-top: 25px;
   }
+  
+  .content .content-cover, .content .content-items {
+    opacity: 1;
+  }
+  
+  .footer {
+    text-align: center;
+    margin: 0;
+  }
+  
 }
