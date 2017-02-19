@@ -35,13 +35,13 @@ html, body {
 
 .social-button {
   height: 32px;
-  opacity: 0.2;
+  opacity: 0.3;
   margin-left: 6px;
   transition: opacity 0.1s;
 }
 
 .social-button:hover {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .footer {
