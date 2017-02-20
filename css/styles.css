@@ -20,7 +20,7 @@ html, body {
   width: 100%;
   text-align: center;
   position: static;
-  padding-top: 25px;
+  padding-top: 28px;
   margin-bottom: 10px;
 }
 
@@ -176,8 +176,12 @@ html, body {
 
 @media(max-width: 800px){
   
-  .row:first-child {
+  .name {
     padding-top: 25px;
+  }
+  
+  .row:first-child {
+    padding-top: 35px;
   }
   
   .content .content-cover, .content .content-items {
