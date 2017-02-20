@@ -110,12 +110,12 @@ html, body {
 
 .content-subtitle {
   font-size: 1.3em;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .content-description {
   margin-top: 7px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .content-links img {
