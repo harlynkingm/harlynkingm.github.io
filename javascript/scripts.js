@@ -8,12 +8,12 @@ var maxSpeed = 0;
 if (view.size.width < 500) {
   numCircles = 15;
   maxSize = 60;
-  maxSpeed = 0.1;
+  maxSpeed = 0.2;
 //  console.log("Small");
 } else if (view.size.width < 1000) {
   numCircles = 20;
   maxSize = 100;
-  maxSpeed = 0.2;
+  maxSpeed = 0.3;
 //  console.log("Medium");
 } else {
   numCircles = 30;
