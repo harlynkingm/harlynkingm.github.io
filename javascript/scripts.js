@@ -6,21 +6,25 @@ var initialPositions = [];
 var numCircles = 0;
 var maxSize = 0;
 var maxSpeed = 0;
+var maxFadeSpeed = 0;
 
 if (view.size.width < 500) {
   numCircles = 15;
   maxSize = 60;
-  maxSpeed = 0.2;
+  maxSpeed = 0.15;
+  maxFadeSpeed = 0.001;
 //  console.log("Small");
 } else if (view.size.width < 1000) {
   numCircles = 20;
   maxSize = 100;
-  maxSpeed = 0.3;
+  maxSpeed = 0.25;
+  maxFadeSpeed = 0.001;
 //  console.log("Medium");
 } else {
   numCircles = 30;
   maxSize = 120;
   maxSpeed = 0.4;
+  maxFadeSpeed = 0.01;
 //  console.log("Large");
 }
 
@@ -58,7 +62,7 @@ for (var i = 0; i < numCircles; i++) {
       angle: (15 * ((Math.random() * 2) - 1)),
       length: newSpeed
   });
-  var newColorSpeed = ((Math.random() * 2) - 1) * 0.01;
+  var newColorSpeed = ((Math.random() * 2) - 1) * maxFadeSpeed;
   colorSpeeds.push(newColorSpeed);
   speeds.push(newVector);
   circles.push(newCircle);
@@ -74,9 +78,9 @@ function onFrame() {
 //        colorSpeeds[i] *= -1;
 //      }
       if (circles[i].opacity <= 0.02) {
-        colorSpeeds[i] = Math.random() * 0.01;
+        colorSpeeds[i] = Math.random() * maxFadeSpeed;
       } else if (circles[i].opacity >= 0.98) {
-        colorSpeeds[i] = Math.random() * -0.01;
+        colorSpeeds[i] = Math.random() * -1 * maxFadeSpeed;
       }
       if (circles[i].position.x > view.bounds.width + maxSize) {
         circles[i].position.x = (maxSize * -1);
