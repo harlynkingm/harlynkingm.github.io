@@ -31,10 +31,16 @@ body {
   max-width: 660px;
   display: flex;
   align-items: center;
+  perspective: 1000;
+  -webkit-perspective: 1000;
 }
 
 .content {
   margin: 2em 0 1em;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform: translate3d(0, 0, 1px);
+  -webkit-transform: translate3d(0, 0, 1px);
 }
 
 h1 {
