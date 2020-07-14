@@ -11,7 +11,7 @@
   -ms-animation: rotate 30.0s infinite linear;
   -o-animation: rotate 30.0s infinite linear;
   animation: rotate 30.0s infinite linear;
-  z-index: -1;
+  z-index: 1;
 }
 
 .square {

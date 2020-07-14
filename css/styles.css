@@ -35,6 +35,7 @@ html, body {
   max-width: 650px;
   display: flex;
   align-items: center;
+  z-index: 2;
 }
 
 .content {
