@@ -4,8 +4,8 @@
   left: 50%;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  transform: rotate3d(-0.8, 1, 0.2, 45deg) translate(-50%, -50%);
-  -webkit-transform: rotate3d(-0.8, 1, 0.2, 45deg) translate(-50%, -50%);
+  transform: rotate3d(-0.8, 1, 0.2, 45deg) translate3d(-50%, -50%, 0);
+  -webkit-transform: rotate3d(-0.8, 1, 0.2, 45deg) translate3d(-50%, -50%, 0);
   -webkit-animation: rotate 30.0s infinite linear;
   -moz-animation: rotate 30.0s infinite linear;
   -ms-animation: rotate 30.0s infinite linear;
@@ -71,41 +71,41 @@
 
 @keyframes rotate {
   0% {
-    transform: rotate3d(-0.8, 1, 0.2, 45deg) translate(-50%, -50%);
+    transform: rotate3d(-0.8, 1, 0.2, 45deg) translate3d(-50%, -50%, 0);
   }
   25% {
-    transform: rotate3d(-0.8, 1, 0.2, 135deg) translate(-50%, -50%);
+    transform: rotate3d(-0.8, 1, 0.2, 135deg) translate3d(-50%, -50%, 0);
   }
   50% {
-    transform: rotate3d(-0.8, 1, 0.2, 225deg) translate(-50%, -50%);
+    transform: rotate3d(-0.8, 1, 0.2, 225deg) translate3d(-50%, -50%, 0);
   }
   75% {
-    transform: rotate3d(-0.8, 1, 0.2, 315deg) translate(-50%, -50%);
+    transform: rotate3d(-0.8, 1, 0.2, 315deg) translate3d(-50%, -50%, 0);
   }
   100% {
-    transform: rotate3d(-0.8, 1, 0.2, 405deg) translate(-50%, -50%);
+    transform: rotate3d(-0.8, 1, 0.2, 405deg) translate3d(-50%, -50%, 0);
   }
 }
 
 @-webkit-keyframes rotate {
   0% {
-    transform: rotate3d(-0.8, 1, 0.2, 45deg) translate(-50%, -50%);
-    -webkit-transform: rotate3d(-0.8, 1, 0.2, 45deg) translate(-50%, -50%);
+    transform: rotate3d(-0.8, 1, 0.2, 45deg) translate3d(-50%, -50%, 0);
+    -webkit-transform: rotate3d(-0.8, 1, 0.2, 45deg) translate3d(-50%, -50%, 0);
   }
   25% {
-    transform: rotate3d(-0.8, 1, 0.2, 135deg) translate(-50%, -50%);
-    -webkit-transform: rotate3d(-0.8, 1, 0.2, 135deg) translate(-50%, -50%);
+    transform: rotate3d(-0.8, 1, 0.2, 135deg) translate3d(-50%, -50%, 0);
+    -webkit-transform: rotate3d(-0.8, 1, 0.2, 135deg) translate3d(-50%, -50%, 0);
   }
   50% {
-    transform: rotate3d(-0.8, 1, 0.2, 225deg) translate(-50%, -50%);
-    -webkit-transform: rotate3d(-0.8, 1, 0.2, 225deg) translate(-50%, -50%);
+    transform: rotate3d(-0.8, 1, 0.2, 225deg) translate3d(-50%, -50%, 0);
+    -webkit-transform: rotate3d(-0.8, 1, 0.2, 225deg) translate3d(-50%, -50%, 0);
   }
   75% {
-    transform: rotate3d(-0.8, 1, 0.2, 315deg) translate(-50%, -50%);
-    -webkit-transform: rotate3d(-0.8, 1, 0.2, 315deg) translate(-50%, -50%);
+    transform: rotate3d(-0.8, 1, 0.2, 315deg) translate3d(-50%, -50%, 0);
+    -webkit-transform: rotate3d(-0.8, 1, 0.2, 315deg) translate3d(-50%, -50%, 0);
   }
   100% {
-    transform: rotate3d(-0.8, 1, 0.2, 405deg) translate(-50%, -50%);
-    -webkit-transform: rotate3d(-0.8, 1, 0.2, 405deg) translate(-50%, -50%);
+    transform: rotate3d(-0.8, 1, 0.2, 405deg) translate3d(-50%, -50%, 0);
+    -webkit-transform: rotate3d(-0.8, 1, 0.2, 405deg) translate3d(-50%, -50%, 0);
   }
 }
