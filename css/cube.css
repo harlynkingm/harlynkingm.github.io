@@ -3,12 +3,14 @@
   top: 50%;
   left: 50%;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transform: rotate3d(-0.8, 1, 0.2, 45deg) translate(-50%, -50%);
-  -webkit-animation: rotate 30.0s linear infinite;
-  -moz-animation: rotate 30.0s linear infinite;
-  -ms-animation: rotate 30.0s linear infinite;
-  -o-animation: rotate 30.0s linear infinite;
-  animation: rotate 30.0s linear infinite;
+  -webkit-transform: rotate3d(-0.8, 1, 0.2, 45deg) translate(-50%, -50%);
+  -webkit-animation: rotate 30.0s infinite linear;
+  -moz-animation: rotate 30.0s infinite linear;
+  -ms-animation: rotate 30.0s infinite linear;
+  -o-animation: rotate 30.0s infinite linear;
+  animation: rotate 30.0s infinite linear;
   z-index: -1;
 }
 
@@ -37,35 +39,59 @@
 
 .square.front {
   transform: translate3d(-50%, -50%, 25vh);
+  -webkit-transform: translate3d(-50%, -50%, 25vh);
 }
 
 .square.right {
   transform: rotateY(90deg) translateY(-50%);
+  -webkit-transform: rotateY(90deg) translateY(-50%);
 }
 
 .square.left {
   left: -50vh;
   transform: rotateY(-90deg) translateY(-50%);
+  -webkit-transform: rotateY(-90deg) translateY(-50%);
 }
 
 .square.back {
   transform: translate3d(-50%, -50%, -25vh);
+  -webkit-transform: translate3d(-50%, -50%, -25vh);
 }
 
 .square.top {
   transform: rotateX(90deg) translateX(-50%);
+  -webkit-transform: rotateX(90deg) translateX(-50%);
   top: -50vh;
 }
 
 .square.bottom {
   transform: rotateX(-90deg) translateX(-50%);
+  -webkit-transform: rotateX(-90deg) translateX(-50%);
 }
 
 @keyframes rotate {
-  from {
+  0% {
     transform: rotate3d(-0.8, 1, 0.2, 45deg) translate(-50%, -50%);
   }
-  to {
+  50% {
+    transform: rotate3d(-0.8, 1, 0.2, 225deg) translate(-50%, -50%);
+  }
+  100% {
     transform: rotate3d(-0.8, 1, 0.2, 405deg) translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate3d(-0.8, 1, 0.2, 45deg) translate(-50%, -50%);
+    -webkit-transform: rotate3d(-0.8, 1, 0.2, 45deg) translate(-50%, -50%);
+  }
+  50% {
+    transform: rotate3d(-0.8, 1, 0.2, 225deg) translate(-50%, -50%);
+    -webkit-transform: rotate3d(-0.8, 1, 0.2, 225deg) translate(-50%, -50%);
+  }
+  100% {
+    transform: rotate3d(-0.8, 1, 0.2, 405deg) translate(-50%, -50%);
+    -webkit-transform: rotate3d(-0.8, 1, 0.2, 405deg) translate(-50%, -50%);
   }
 }
