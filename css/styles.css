@@ -16,8 +16,12 @@ html, body {
   font-family: NoirPro, sans-serif;
 }
 
-body {
+.background {
   background-color: #F2F2F2;
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  transform: translate3d(-50%, -25%, -1000px);
 }
 
 ::selection {
@@ -31,16 +35,10 @@ body {
   max-width: 660px;
   display: flex;
   align-items: center;
-  perspective: 1000;
-  -webkit-perspective: 1000;
 }
 
 .content {
   margin: 2em 0 1em;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  transform: translate3d(0, 0, 1px);
-  -webkit-transform: translate3d(0, 0, 1px);
 }
 
 h1 {
@@ -72,7 +70,7 @@ p.small a {
 
 @media (prefers-color-scheme: dark) {
 
-  body {
+  .background {
     background-color: #0D0D0D;
   }
 
