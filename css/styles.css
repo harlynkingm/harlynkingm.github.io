@@ -70,6 +70,63 @@ p.small a {
   color: #737373;
 }
 
+.creative-adventure-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.creative-adventure-wrapper svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    image-rendering: high-quality;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.creative-adventure {
+  display: inline-flex;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+  ) -100% / 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 6.66s linear infinite, wave 40s ease-in-out infinite;
+  transform: rotateZ(0deg);
+  filter: url(#wave);
+  padding-left: 1.5px;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 100%;
+  }
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    15% {
+        transform: translateY(1px) rotateZ(1deg);
+    }
+    85% {
+        transform: translateY(-1px) rotateZ(-1deg);
+    }
+}
+
 @media (prefers-color-scheme: dark) {
 
   .background {
@@ -119,6 +176,10 @@ p:nth-of-type(3) {
 
 p:nth-of-type(4) {
   animation-delay: 0.9s;
+}
+
+p:nth-of-type(5) {
+  animation-delay: 1s;
 }
 
 @keyframes fadein {

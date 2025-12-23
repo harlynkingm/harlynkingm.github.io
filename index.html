@@ -44,10 +44,48 @@
   <div class="wrapper">
     <div class="content">
       <h1>Max Harlynking</h1>
-      <p>Currently employed as a Senior Software Engineer at Apple in Cupertino, CA, where he develops <a href="https://developer.apple.com/videos/play/wwdc2025/344" target="_blank">UI automation tools and frameworks</a> with the Xcode team. He was also responsible for a native app that automates the creation of Apple’s video marketing content.</p>
+      <p>Currently embarking on a 
+        <span class="creative-adventure-wrapper">
+          <span class="creative-adventure" title="Coming Soon">
+            <svg overflow="visible">
+              <defs>
+                  <filter id="wave" width="400%" height="400%">
+                    <feTurbulence
+                      type="fractalNoise"
+                      baseFrequency="0.01"
+                      numOctaves="12"
+                      seed="1000"
+                      result="turbulence">
+                      <animate
+                        attributeName="baseFrequency"
+                        values="0.001 0; 0.003 0.009; 0.001 0"
+                        dur="40s"
+                        repeatCount="indefinite"
+                        calcMode="spline"
+                        keyTimes="0; 0.5; 1"
+                        keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
+                      />
+                    </feTurbulence>
+                    <feGaussianBlur in="turbulence" stdDeviation="2" result="smoothTurbulence"/>
+                    <feDisplacementMap
+                      in2="smoothTurbulence"
+                      in="SourceGraphic"
+                      scale="30"
+                      xChannelSelector="R"
+                      yChannelSelector="G"
+                      result="displacedTurbulence"
+                    />
+                  </filter>
+              </defs>
+            </svg>
+            <span>new creative adventure</span>
+          </span>
+        </span>
+      </p>
+      <p>Most recently employed as a Senior Software Engineer at Apple Inc, where he developed <a href="https://developer.apple.com/videos/play/wwdc2025/344" target="_blank">UI automation tools and frameworks</a> with the Xcode team. He was also responsible for a native app that automated the creation of Apple's video marketing content.</p>
       <p>In the past, he has edited <a href="https://www.youtube.com/watch?v=KWrRPohom3I" target="_blank">viral videos</a>, <a href="https://youtu.be/p6ggqXM1BB8" target="_blank">lyric videos</a>, <a href="https://www.youtube.com/watch?v=2sI4fCBrziU" target="_blank">3D animations</a>, and developed <a href="https://www.youtube.com/watch?v=nIrUv5plPzI" target="_blank">games on iOS</a>.</p>
       <p>He is also passionate about <a href="https://unsplash.com/@harlynkingm" target="_blank">photography</a> and <a href="https://maxcyng.com" target="_blank">music</a>.</p>
-      <p class="small"><a href="mailto:harlynkingm@gmail.com" target="_blank">Contact via email</a></p>
+      <p class="small"><a href="mailto:harlynkingm@gmail.com" target="_blank">email</a> <a href="https://www.instagram.com/maxharlynking/" target="_blank">instagram</a> <a href="https://www.linkedin.com/in/max-harlynking/" target="_blank">linkedin</a></p>
     </div>
   </div>
 </body>
